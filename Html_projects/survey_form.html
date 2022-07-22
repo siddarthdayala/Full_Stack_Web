@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey</title>
+</head>
+<body>
+    <header>
+        <h1>Students' Survey Form</h1>
+    </header>
+    <form action="">
+        <fieldset>
+            <legend>Personal Details</legend><br>
+            <label for="name">Name</label><br>
+            <input type="text" placeholder="firstname" name="name">
+            <input type="text" placeholder="lastname" name="name"><br><br>
+            <label for="age">Age</label><br>
+            <input type="text" placeholder="age"> <br><br>
+            <label for="gender">Select Gender</label><br>
+            <input type="radio" name="gender" value="male">Male <br>
+            <input type="radio" name="gender" value="female">Female <br>
+            <input type="radio" name="gender" value="binary">Binary <br><br>
+            <label for="cgpa">CGPA</label><br>
+            <input type="text" placeholder="10th Class" name="cgpa">
+            <input type="text" placeholder="Intermediate/12th Class" name="cgpa"><br>
+        </fieldset><br>
+        <fieldset>
+            <legend>Survey</legend><br>
+            <label for="courses">Select your ongoing course(s):</label><br>
+            <input type="checkbox" name="courses" value="Html/Css">HTML/CSS <br>
+            <input type="checkbox" name="courses" value="Python">Python <br>
+            <input type="checkbox" name="courses" value="Java">Java <br>
+            <input type="checkbox" name="courses" value="Javascript">Javascript <br><br>
+            <label for="rating">Rate your proficiency in the selected programming language out of 10:</label>
+            <input type="number" name="rating" min="0" max="10"><br><br>
+            <label for="work">How many hours do you practice programming in a week?</label>
+            <input type="number" name="work" min="0"><br><br>
+            <label for="mentorship">Do you want any mentorship?</label><br>
+            <input type="radio" name="mentorship" value="yes">Yes <br>
+            <input type="radio" name="mentorship" value="no">No <br><br>
+            <label for="forums">Any trouble using community forums?</label><br>
+            <input type="radio" name="forums" value="yes">Yes <br>
+            <input type="radio" name="forums" value="no">No <br><br>
+            <label for="reasons">If Yes, give your reason(s) below:</label><br>
+            <textarea name="reasons" placeholder="Enter your troubles here" cols="50"></textarea>
+        </fieldset><br><br>
+        <input type="submit">
+    </form>
+</body>
+</html>
